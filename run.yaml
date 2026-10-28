@@ -20,3 +20,6 @@ spec:
   - name: dockerconfig-ws
     secret:
       secretName: docker-reg-creds
+      items:
+        - key: .dockerconfigjson
+          path: config.json
